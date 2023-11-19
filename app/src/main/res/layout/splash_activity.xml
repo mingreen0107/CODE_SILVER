@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"> <!-- 여기서 배경색을 초록색으로 설정합니다. -->
+
+    <!-- 여기에 로고나 다른 스플래시 화면 요소를 추가할 수 있습니다. -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your App Name"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"/>
+
+</FrameLayout>

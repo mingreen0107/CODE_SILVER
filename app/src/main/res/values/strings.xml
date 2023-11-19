@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RegisterLogInExample</string>
+    <string name="back_button_description">뒤로 가기 버튼</string>
+</resources>

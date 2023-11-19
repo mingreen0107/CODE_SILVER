@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agree">
+
+    <Button
+        android:id="@+id/backkey"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:contentDescription="@string/back_button_description"
+        android:layout_marginEnd="360dp"
+        android:background="@drawable/img"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="71dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="164dp"
+        android:text="회원가입"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="88dp"
+        android:background="#DDDADA"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <SeekBar
+        android:id="@+id/step"
+        android:layout_width="329dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="32dp"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="100" />
+
+    <CheckBox
+        android:id="@+id/all_check"
+        android:layout_width="239dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="148dp"
+        android:buttonTint="#4CAF50"
+        android:text="모두 동의합니다."
+        android:textSize="9pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="350sp"
+        android:layout_height="1dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="28dp"
+        android:background="#DDDADA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check_1"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="100dp"
+        android:buttonTint="#4CAF50"
+        android:text="어쩌구저쩌구 동의합니다."
+        android:textSize="9pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check_m"
+        android:layout_width="338dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="52dp"
+        android:buttonTint="#4CAF50"
+        android:text="마케팅 수신에 동의합니다. (선택)"
+        android:textSize="9pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check_2"
+        android:layout_width="222dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="168dp"
+        android:buttonTint="#4CAF50"
+        android:text="어쩌구저쩌구 이건 두줄짜리 동의합니다."
+        android:textSize="9pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="648dp"
+        android:background="#DDDADA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="381dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="656dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#76DD7A"
+        android:text="회원가입"
+        android:textColor="#FFFF"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

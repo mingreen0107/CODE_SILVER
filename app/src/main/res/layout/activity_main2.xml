@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/pnum"
+        android:layout_width="95dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="296dp"
+        android:text="전화번호"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/oknum"
+        android:layout_width="92dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="292dp"
+        android:text="인증번호"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="344dp"
+        android:background="#00F44336"
+        android:text="03:30"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toEndOf="@+id/oknum"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_oknum"
+        android:layout_width="352dp"
+        android:layout_height="50dp"
+        android:background="#E8E8E8"
+        android:hint="인증번호를 입력하세요"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <EditText
+        android:id="@+id/user_pnum"
+        android:layout_width="351dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:background="#E8E8E8"
+        android:hint="전화번호를 입력하세요 (-제외)"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/step"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <SeekBar
+        android:id="@+id/step"
+        android:layout_width="329dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="32dp"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="50" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="88dp"
+        android:background="#DDDADA"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="71dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="164dp"
+        android:text="회원가입"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backkey"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:contentDescription="@string/back_button_description"
+        android:layout_marginEnd="360dp"
+        android:background="@drawable/img"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <Button
+        android:id="@+id/oknum_button"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="24dp"
+        android:background="#ffffff"
+        android:text="인증번호 재발송"
+        android:textColor="#4CAF50"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="648dp"
+        android:background="#DDDADA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="381dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="656dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="다음"
+        android:textStyle="bold"
+        android:textSize="9pt"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
